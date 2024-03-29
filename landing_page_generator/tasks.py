@@ -55,7 +55,7 @@ class TaskPrompts():
   def update_page():
     return dedent("""
       READ the ./[chosen_template]/src/app/page.jsx OR
-      ./[chosen_template]/src/app/(main)/page.jsx (main with the parenthesis) 
+      ./[chosen_template]/src/app/(main)/page.jsx OR (main with the parenthesis) 
       to learn its content and then write an updated 
       version to the filesystem that removes any 
       section related components that are not in our 

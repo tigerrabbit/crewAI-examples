@@ -4,7 +4,9 @@ import shutil
 from textwrap import dedent
 
 from crewai import Agent, Crew, Task
-from langchain.agents.agent_toolkits import FileManagementToolkit
+# from langchain.agents.agent_toolkits import FileManagementToolkit
+from langchain_community.agent_toolkits import FileManagementToolkit
+
 from tasks import TaskPrompts
 
 from tools.browser_tools import BrowserTools

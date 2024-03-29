@@ -18,8 +18,12 @@ class TemplateTools():
     """Copy a landing page template to your project 
     folder so you can start modifying it, it expects 
     a landing page template folder as input"""
-    source_path = Path(f"templates/{landing_page_template}")
+    # source_path = Path(f"templates/{landing_page_template}")
+    source_path = Path(f"/templates/{chosen_template}/{chosen_template}-js/src/app/page.jsx")
+
     destination_path = Path(f"workdir/{landing_page_template}")
+    # destination_path = Path(f"workdir/{chosen_template}")
+
     destination_path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copytree(source_path, destination_path)
     return f"Template copied to {landing_page_template} and ready to be modified, main files should be under ./{landing_page_template}/src/components, you should focus on those."
